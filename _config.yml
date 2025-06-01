@@ -1,5 +1,8 @@
 title: Antonio Di Giovanni # your name (or website title) here
 logo: "/images/portrait.png?raw=true" # your photo (or logo) here
+url: "https://antoniodigiovanni.com"  # Your custom domain
+baseurl: ""  # Leave empty for custom domains
+
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <br>
   XXX.
