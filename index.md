@@ -14,6 +14,9 @@ This project explores the application of deep learning techniques to predict the
 [View code on GitHub](https://github.com/Antoniodigiovanni/deep-nn-stock-returns)
 <br>
 [Read the paper](https://github.com/Antoniodigiovanni/deep-nn-stock-returns/blob/main/Master%20Thesis%2C%20Antonio%20Di%20Giovanni.pdf)
+[📄 View the Thesis (PDF) - new tab](pdf/di_giovanni-master_thesis.pdf?raw=true){:target="_blank"}
+[📄 View the Thesis (PDF)](pdf/di_giovanni-master_thesis.pdf?raw=true)
+<a href="pdf/di_giovanni-master_thesis.pdf?raw=true" target="_blank">HTML to Download</a>
 
 ---
 
