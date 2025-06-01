@@ -6,17 +6,17 @@
 
 This project explores the application of deep learning techniques to predict the cross-section of stock returns. The focus is on developing and automatically tuning deep neural network models to enhance the accuracy of stock return forecasts. By leveraging advanced machine learning methodologies, the study aims to assess the predictive performance of semi-automated methodologies in the context of asset pricing.
 
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#)  [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#)
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#)  [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) 
+<!-- [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) -->
 
 <img src="images/nni_thesis.png?raw=true" />
 
 
-[View code on GitHub](https://github.com/Antoniodigiovanni/deep-nn-stock-returns)
+<!-- [View code on GitHub](https://github.com/Antoniodigiovanni/deep-nn-stock-returns) -->
+[View the code on GitHub](https://github.com/Antoniodigiovanni/deep-nn-stock-returns)
 <br>
-[Read the paper](https://github.com/Antoniodigiovanni/deep-nn-stock-returns/blob/main/Master%20Thesis%2C%20Antonio%20Di%20Giovanni.pdf)
-[📄 View the Thesis (PDF) - new tab](pdf/di_giovanni-master_thesis.pdf?raw=true){:target="_blank"}
-[📄 View the Thesis (PDF)](pdf/di_giovanni-master_thesis.pdf?raw=true)
-<a href="pdf/di_giovanni-master_thesis.pdf?raw=true" target="_blank">HTML to Download</a>
+[📄 View thesis](pdf/di_giovanni-master_thesis.pdf?raw=true){:target="_blank"}  <!-- The last part allows to open a new tab -->
+
 
 ---
 
@@ -30,8 +30,12 @@ A lightweight web application that transcribes YouTube videos, podcasts (via URL
 
 <img src="images/whisper-ai-transcriber-short.png?raw=true" />
 
-[View code on GitHub](https://github.com/Antoniodigiovanni/whisper-ai-transcriber)
+[View the code on GitHub](https://github.com/Antoniodigiovanni/whisper-ai-transcriber)
+<!-- [View code on GitHub](https://github.com/Antoniodigiovanni/whisper-ai-transcriber) -->
+
+
 ---
+
 
 ### Project 3
 
