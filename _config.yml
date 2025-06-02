@@ -1,5 +1,5 @@
 title: Antonio Di Giovanni # your name (or website title) here
-logo: "/images/profile.jpeg?raw=true" # your photo (or logo) here
+logo: "/images/profile_circle.png?raw=true" # your photo (or logo) here
 url: "https://antoniodigiovanni.com"  # Your custom domain
 baseurl: ""  # Leave empty for custom domains
 
@@ -9,7 +9,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   XXX
   <br><br>
-  <a href="https://www.linkedin.com/in/antonio-di-giovanni/">View my LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/antonio-di-giovanni/">LinkedIn Profile</a> 
   
 theme: jekyll-theme-minimal
 google_analytics: G-RLJJ9SNHJN # your Google Analytics tracking ID here
