@@ -9,9 +9,9 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   XXX
   <br><br>
-  <a href="https://www.linkedin.com/in/antonio-di-giovanni/", target="_blank" rel="noopener noreferrer"><strong>LinkedIn Profile</strong></a> <br>
-  <a href="https://github.com/Antoniodigiovanni", target="_blank" rel="noopener noreferrer"><strong>GitHub Profile</strong></a> <br>
-  <a href="pdf/antonio_di_giovanni, cv.pdf?raw=true", target="_blank" rel="noopener noreferrer"><strong>CV</strong></a> <br>
+  <a href="https://www.linkedin.com/in/antonio-di-giovanni/", target="_blank" rel="noopener noreferrer">LinkedIn Profile</a> <br>
+  <a href="https://github.com/Antoniodigiovanni", target="_blank" rel="noopener noreferrer">GitHub Profile</a> <br>
+  <a href="pdf/antonio_di_giovanni, cv.pdf?raw=true", target="_blank" rel="noopener noreferrer">CV</a> <br>
   
 theme: jekyll-theme-minimal
 google_analytics: G-RLJJ9SNHJN # your Google Analytics tracking ID here
