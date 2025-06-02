@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: 960px;   /* or more if needed */
+  margin: 0 auto;
+  padding: 0 1.5rem;  /* for mobile spacing */
+}
+
+.site-title {
+  white-space: nowrap; /* prevents line break */
+  font-size: 2rem;
+  margin: 0;
+}
