@@ -9,13 +9,14 @@ This project explores the application of deep learning techniques to predict the
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#)  [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) 
 <!-- [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) -->
 
-<img src="images/nni_thesis.png?raw=true" />
+<!-- <img src="images/nni_thesis.png?raw=true" /> -->
+<img src="images/nni_example.png?raw=true" />
 
 
 <!-- [View code on GitHub](https://github.com/Antoniodigiovanni/deep-nn-stock-returns) -->
 [View the code on GitHub](https://github.com/Antoniodigiovanni/deep-nn-stock-returns)
 <br>
-[📄 View thesis](pdf/di_giovanni-master_thesis.pdf?raw=true){:target="_blank"}  <!-- The last part allows to open a new tab -->
+[View thesis](pdf/di_giovanni-master_thesis.pdf?raw=true){:target="_blank"}  <!-- The last part allows to open a new tab -->
 
 
 ---
