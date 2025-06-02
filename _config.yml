@@ -5,9 +5,12 @@ baseurl: ""  # Leave empty for custom domains
 
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <br>
-  XXX.
-  <br><br>
-  XXX
+  Data scientist with a strong focus on 
+  time series forecasting, tabular data and deep learning.
+  <br>
+  
+  Previous experiences include roles in startups, investment firms, and a leading strategy consulting firm, combining technical depth with business-oriented problem solving.
+
   <br><br>
   <a href="https://www.linkedin.com/in/antonio-di-giovanni/", target="_blank" rel="noopener noreferrer">LinkedIn Profile</a> <br>
   <a href="https://github.com/Antoniodigiovanni", target="_blank" rel="noopener noreferrer">GitHub Profile</a> <br>
