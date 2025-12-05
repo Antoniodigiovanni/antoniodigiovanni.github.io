@@ -12,7 +12,6 @@ This project explores the application of deep learning techniques to predict the
 <!-- [![](https://img.shields.io/badge/Python-white?logo=Python)](#)  [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)  -->
 
 <!-- <img src="images/nni_thesis.png?raw=true" /> -->
-<img src="images/nni_example.png?raw=true" />
 
 
 <!-- [View code on GitHub](https://github.com/Antoniodigiovanni/deep-nn-stock-returns) -->
@@ -20,6 +19,7 @@ This project explores the application of deep learning techniques to predict the
 <br>
 [View thesis](pdf/di_giovanni-master_thesis.pdf?raw=true){:target="_blank"}  <!-- The last part allows to open a new tab -->
 
+<img src="images/nni_example.png?raw=true" />
 
 ---
 
@@ -52,10 +52,12 @@ Database: MongoDB Atlas (Vector Store) -->
 <!-- [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/LangChain-ffffff?logo=langchain&logoColor=green)] (#) -->
 
 
-<img src="images/obsichat.png?raw=true" />
 
 [Try it out!](https://obsichat.streamlit.app/)
+<br>
 [View the code on GitHub](https://github.com/Antoniodigiovanni/obsidian-rag-chat)
+
+<img src="images/obsichat.png?raw=true" />
 
 ---
 
@@ -69,11 +71,11 @@ A lightweight web application that transcribes YouTube videos, podcasts (via URL
 <!-- [![](https://img.shields.io/badge/Python-white?logo=Python)](#)  [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) -->
 
 
-<img src="images/whisper-ai-transcriber-short.png?raw=true" />
 
 [View the code on GitHub](https://github.com/Antoniodigiovanni/whisper-ai-transcriber)
 <!-- [View code on GitHub](https://github.com/Antoniodigiovanni/whisper-ai-transcriber) -->
 
+<img src="images/whisper-ai-transcriber-short.png?raw=true" />
 
 ---
 
