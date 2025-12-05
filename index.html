@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Di Giovanni | Data Scientist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --sidebar-width: 350px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* --- Sidebar Styling --- */
+        aside {
+            width: var(--sidebar-width);
+            background: #fff;
+            padding: 40px;
+            position: fixed;
+            height: 100vh;
+            border-right: 1px solid #eaeaea;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.02);
+            z-index: 100;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 3px solid var(--accent);
+            padding: 3px;
+        }
+
+        aside h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        aside h2 {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: auto;
+        }
+
+        .social-btn {
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 1.2rem;
+            border: 1px solid #ddd;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background-color: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .btn-cv {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 25px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn-cv:hover {
+            background-color: var(--accent);
+        }
+
+        /* --- Main Content Styling --- */
+        main {
+            margin-left: var(--sidebar-width);
+            padding: 60px 80px;
+            flex: 1;
+            max-width: 1200px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--primary);
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 15px;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: top;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project-content {
+            padding: 30px;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .project-tagline {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .tech-stack {
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .tech-stack img {
+            height: 25px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .link-btn {
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .link-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 40px 20px;
+                border-right: none;
+                border-bottom: 1px solid #eaeaea;
+            }
+            main {
+                margin-left: 0;
+                padding: 40px 20px;
+            }
+            .project-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <aside>
+        <img src="images/profile_circle.png" alt="Antonio Di Giovanni" class="profile-img">
+        <h1>Antonio Di Giovanni</h1>
+        <h2>Data Scientist</h2>
+        
+        <div class="bio">
+            <p>Focusing on time series forecasting, tabular data, and deep learning.</p>
+            <br>
+            <p>Experience in startups, investment firms, and strategy consulting, combining technical depth with business-oriented problem solving.</p>
+        </div>
+
+        <a href="pdf/antonio_di_giovanni_cv.pdf" target="_blank" class="btn-cv">Download CV</a>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/antonio-di-giovanni/" target="_blank" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Antoniodigiovanni" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:your-email@example.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </aside>
+
+    <main>
+        <h2 class="section-title">Selected Projects</h2>
+
+        <article class="project-card">
+            <img src="images/nni_example.png" alt="Neural Network Optimization" class="project-image">
+            <div class="project-content">
+                <div class="project-tagline">Master Thesis</div>
+                <h3 class="project-title">Deep Neural Networks for Stock Returns Forecasting</h3>
+                
+                <p class="project-description">
+                    Explores the application of deep learning techniques to predict the cross-section of stock returns. 
+                    The focus is on developing and automatically tuning deep neural network models (AutoML) to enhance forecast accuracy. 
+                    This study leverages advanced machine learning methodologies to assess the performance of semi-automated methodologies in asset pricing.
+                </p>
+
+                <div class="tech-stack">
+                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Antoniodigiovanni/deep-nn-stock-returns" target="_blank" class="link-btn"><i class="fab fa-github"></i> View Code</a>
+                    <a href="pdf/di_giovanni-master_thesis.pdf" target="_blank" class="link-btn"><i class="fas fa-file-pdf"></i> Read Thesis</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <img src="images/obsichat.png" alt="ObsiChat Interface" class="project-image">
+            <div class="project-content">
+                <div class="project-tagline">RAG Application</div>
+                <h3 class="project-title">ObsiChat – AI-Powered Knowledge Assistant</h3>
+                
+                <p class="project-description">
+                    A full-stack Retrieval-Augmented Generation (RAG) application that turns Obsidian notes into a queryable intelligence system.
+                    It empowers users to have natural language conversations with their personal knowledge base.
+                    Features a robust pipeline for uploading vaults, automated metadata extraction, and intelligent duplicate detection using SHA-256 hashing.
+                </p>
+
+                <div class="tech-stack">
+                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                    <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" alt="FastAPI">
+                    <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white" alt="Streamlit">
+                    <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain">
+                    <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+                    <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI">
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Antoniodigiovanni/obsidian-rag-chat" target="_blank" class="link-btn"><i class="fab fa-github"></i> View Code</a>
+                    <a href="https://obsichat.streamlit.app/" target="_blank" class="link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <img src="images/whisper-ai-transcriber-short.png" alt="Whisper AI Interface" class="project-image">
+            <div class="project-content">
+                <div class="project-tagline">Web App</div>
+                <h3 class="project-title">Whisper AI Transcriber</h3>
+                
+                <p class="project-description">
+                    A lightweight web application capable of transcribing YouTube videos, podcasts, and uploaded audio files. 
+                    Leverages OpenAI’s Whisper model for speech-to-text with support for both local inference and API-based processing.
+                    Designed to demonstrate practical integration of AI models in web applications with a user-friendly interface.
+                </p>
+
+                <div class="tech-stack">
+                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+                    <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face">
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Antoniodigiovanni/whisper-ai-transcriber" target="_blank" class="link-btn"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
+        </article>
+
+    </main>
+</body>
+</html>
